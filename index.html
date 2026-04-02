@@ -3,115 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-  <meta name="description" content="Portfolio of hardware and software projects by Your Name." />
+  <title>Yash Thakker | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <h1>Your Name</h1>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <nav class="navbar">
+    <h1><a href="index.html">Yash Thakker</a></h1>
+    <div class="nav-links">
+      <a href="projects.html">Projects</a>
+      <a href="experience.html">Experience</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-    <section class="hero-content">
-      <p class="tag">Hardware + Software Builder</p>
-      <h2>I build embedded systems, digital design projects, and software tools.</h2>
-      <p class="intro">
-        I'm a student interested in hardware/software engineering. I enjoy building projects
-        that connect code with real devices, from embedded systems to full-stack tools.
-      </p>
-      <div class="hero-buttons">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="https://github.com/yourusername" target="_blank">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>
-      </div>
-    </section>
+  <header class="hero">
+    <h2>Hardware and Software Projects Portfolio</h2>
+    <p>
+      I’m Yash Thakker, a student interested in embedded systems, digital design, and software engineering.
+      I enjoy building projects that combine hardware and software, from processor design and ESP32 systems
+      to polished web tools and dashboards.
+    </p>
+    <div class="hero-buttons">
+      <a class="btn primary" href="projects.html">View Projects</a>
+      <a class="btn" href="experience.html">View Experience</a>
+    </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <h3>About Me</h3>
-      <p>
-        I’m a student who enjoys building projects at the intersection of hardware and software.
-        My interests include embedded systems, computer architecture, firmware, and software development.
-      </p>
-    </section>
-
-    <section id="projects" class="section">
-      <h3>Projects</h3>
-
-      <div class="project-grid">
-        <article class="card">
-          <h4>RISC-V Datapath Project</h4>
-          <p>
-            Designed and implemented parts of a processor datapath in schematic/HDL, focusing on logic,
-            organization, and verification.
-          </p>
-          <ul>
-            <li>Tools: SystemVerilog, Virtuoso</li>
-            <li>Focus: digital design, architecture</li>
-          </ul>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Demo / Writeup</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h4>ESP32 Clock + Weather Display</h4>
-          <p>
-            Built an ESP32-based display that shows time, weather, and calendar-style information
-            on an LED matrix.
-          </p>
-          <ul>
-            <li>Tools: ESP32, C++, MAX7219</li>
-            <li>Focus: embedded systems, APIs</li>
-          </ul>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Demo / Writeup</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h4>Web Dashboard Project</h4>
-          <p>
-            Created a clean dashboard interface for viewing and organizing data with a responsive design.
-          </p>
-          <ul>
-            <li>Tools: HTML, CSS, JavaScript</li>
-            <li>Focus: frontend, usability</li>
-          </ul>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
-          </div>
-        </article>
+  <section class="container">
+    <h2 class="section-title">Featured Work</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="images/riscv-1.jpg" alt="RISC-V project image">
+        <div class="card-content">
+          <h3>RISC-V Datapath Design</h3>
+          <p>Designed and organized datapath logic using HDL and schematic tools.</p>
+          <a class="btn" href="projects/riscv.html">Read More</a>
+        </div>
       </div>
-    </section>
 
-    <section id="resume" class="section">
-      <h3>Resume</h3>
-      <p>You can link your PDF resume here once you upload it to the repo.</p>
-      <a class="btn" href="resume.pdf" target="_blank">View Resume</a>
-    </section>
+      <div class="card">
+        <img src="images/esp32-1.jpg" alt="ESP32 project image">
+        <div class="card-content">
+          <h3>ESP32 Clock and Weather Display</h3>
+          <p>Built an embedded display using ESP32, LED matrices, and weather/calendar data.</p>
+          <a class="btn" href="projects/esp32.html">Read More</a>
+        </div>
+      </div>
 
-    <section id="contact" class="section">
-      <h3>Contact</h3>
-      <p>Email: yourname@email.com</p>
-      <p>GitHub: github.com/yourusername</p>
-      <p>LinkedIn: linkedin.com/in/yourusername</p>
-    </section>
-  </main>
+      <div class="card">
+        <img src="images/dashboard-1.jpg" alt="Dashboard image">
+        <div class="card-content">
+          <h3>Software Dashboard</h3>
+          <p>Created a responsive dashboard interface for organizing and presenting information.</p>
+          <a class="btn" href="projects/dashboard.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-    <p>© 2026 Your Name</p>
+    <p>© 2026 Yash Thakker</p>
   </footer>
 </body>
 </html>
