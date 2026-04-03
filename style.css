@@ -8,6 +8,21 @@ html, body {
   height: 100%;
 }
 
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #f5f7fb;
