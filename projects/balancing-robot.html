@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self-Balancing Robot | Yash Thakker</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1><a href="../index.html">Yash Thakker</a></h1>
+    <div class="nav-links">
+      <a href="../projects.html">Projects</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-header">
+      <h2>Self-Balancing Robot</h2>
+      <p>Built a two-wheeled self-balancing robot using real-time sensor fusion, feedback control, and embedded motor actuation.</p>
+    </section>
+
+    <section class="project-layout">
+      <div class="project-main">
+        <h3>Overview</h3>
+        <p>
+          This project was a self-balancing robot designed to remain upright by continuously sensing its tilt and
+          adjusting motor output in real time. The robot combines embedded programming, control systems, and hardware integration
+          to create a dynamic system that can actively correct its own instability. I built this project to better understand
+          how feedback control and real-time sensing work together in robotics.
+        </p>
+
+        <img src="../images/self-balancing-robot-1.jpg" alt="Self-balancing robot image">
+
+        <h3>Demo</h3>
+        <video controls>
+          <source src="../videos/self-balancing-robot-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Problem / Goal</h3>
+        <p>
+          A two-wheeled robot is naturally unstable, so the goal was to create a control system that could detect tilt
+          and apply corrections fast enough to keep the robot balanced. The project required reliable sensor readings,
+          responsive motor control, and carefully tuned control logic to make the system stable in real time.
+        </p>
+
+        <h3>Technical Implementation</h3>
+        <ul>
+          <li>Used an IMU to measure tilt and motion of the robot in real time</li>
+          <li>Implemented feedback control to continuously adjust wheel speed and direction</li>
+          <li>Programmed an embedded microcontroller to process sensor data and drive motors</li>
+          <li>Integrated the mechanical, electrical, and software components into one closed-loop system</li>
+          <li>Tuned the controller to improve stability, responsiveness, and recovery behavior</li>
+        </ul>
+
+        <h3>Challenges</h3>
+        <p>
+          One of the biggest challenges was tuning the robot so it responded quickly without overcorrecting.
+          Small changes in control parameters could make the difference between smooth balancing and unstable oscillation.
+          Another challenge was dealing with noisy sensor data, since inaccurate tilt readings made the robot harder to stabilize.
+        </p>
+
+        <h3>Results</h3>
+        <p>
+          The final robot was able to maintain balance by continuously correcting its tilt through closed-loop control.
+          The project demonstrated how sensor feedback, embedded processing, and motor actuation can work together in a real-time robotics system.
+        </p>
+
+        <h3>What I Learned</h3>
+        <p>
+          This project gave me hands-on experience with control systems, embedded programming, sensor integration,
+          and real-time debugging. It also helped me understand how theoretical ideas from dynamics and feedback control
+          translate into physical robotic behavior.
+        </p>
+      </div>
+
+      <aside class="project-side">
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>Embedded C/C++</li>
+          <li>Microcontroller</li>
+          <li>IMU Sensor</li>
+          <li>Motor Driver</li>
+          <li>Feedback Control</li>
+          <li>Robotics</li>
+        </ul>
+
+        <h3>Project Links</h3>
+        <ul>
+          <li><a href="#">GitHub Repository</a></li>
+          <li><a href="#">Demo Video</a></li>
+          <li><a href="#">Design Notes</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Yash Thakker</p>
+  </footer>
+</body>
+</html>

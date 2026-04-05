@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom RISC-V Operating System | Yash Thakker</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1><a href="../index.html">Yash Thakker</a></h1>
+    <div class="nav-links">
+      <a href="../projects.html">Projects</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-header">
+      <h2>Custom RISC-V Operating System</h2>
+      <p>Built a Unix-like operating system for RISC-V with multitasking, virtual memory, syscalls, and low-level device drivers.</p>
+    </section>
+
+    <section class="project-layout">
+      <div class="project-main">
+        <h3>Overview</h3>
+        <p>
+          This project is a custom operating system built for the RISC-V architecture in C and RISC-V assembly.
+          The goal was to understand operating systems at a much deeper level by implementing core kernel subsystems
+          directly, including scheduling, memory management, interrupt handling, and hardware-facing drivers.
+          Instead of only studying these ideas in class, I wanted to build them from the ground up and see how they interact in a real system.
+        </p>
+
+        <img src="../images/riscv-os-1.jpg" alt="RISC-V OS image">
+
+        <h3>Demo</h3>
+        <video controls>
+          <source src="../videos/riscv-os-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Problem / Goal</h3>
+        <p>
+          Modern operating systems hide a huge amount of complexity behind abstractions. I wanted to build a smaller,
+          Unix-like system that exposed the core ideas more directly: how processes are scheduled, how syscalls cross
+          the user-kernel boundary, how virtual memory is mapped, and how devices are managed through memory-mapped I/O.
+        </p>
+
+        <h3>Technical Implementation</h3>
+        <ul>
+          <li>Implemented multitasking and scheduling for up to 16 processes</li>
+          <li>Built support for threading, context switching, and syscall handling</li>
+          <li>Implemented page table management and virtual memory mechanisms</li>
+          <li>Developed kernel subsystems including a file system and interrupt handling</li>
+          <li>Interfaced directly with hardware using memory-mapped I/O</li>
+          <li>Built device drivers for UART, RTC, and VirtIO</li>
+        </ul>
+
+        <h3>Challenges</h3>
+        <p>
+          One major challenge was managing interactions between multiple kernel subsystems at once. Context switching,
+          interrupts, and memory management all affect each other, so debugging required careful reasoning about system state.
+          Another challenge was working at the hardware boundary, where small mistakes in register usage or memory mapping
+          could break the entire system.
+        </p>
+
+        <h3>Results</h3>
+        <p>
+          The project successfully supports multitasking, virtual memory, syscall execution, and direct device interaction.
+          It gave me hands-on experience with the core mechanisms behind modern operating systems and significantly strengthened
+          my low-level systems programming skills.
+        </p>
+
+        <h3>What I Learned</h3>
+        <p>
+          This project taught me how operating systems work beyond theory. I gained experience in kernel design,
+          hardware/software interfacing, debugging low-level code, and structuring large systems where many components depend on each other.
+        </p>
+      </div>
+
+      <aside class="project-side">
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>RISC-V Assembly</li>
+          <li>C</li>
+          <li>Virtual Memory</li>
+          <li>Syscalls</li>
+          <li>UART / RTC / VirtIO</li>
+        </ul>
+
+        <h3>Project Links</h3>
+        <ul>
+          <li><a href="#">GitHub Repository</a></li>
+          <li><a href="#">Demo Video</a></li>
+          <li><a href="#">Design Notes</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Yash Thakker</p>
+  </footer>
+</body>
+</html>

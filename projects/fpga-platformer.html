@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FPGA Platformer Game | Yash Thakker</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1><a href="../index.html">Yash Thakker</a></h1>
+    <div class="nav-links">
+      <a href="../projects.html">Projects</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-header">
+      <h2>FPGA Platformer Game</h2>
+      <p>Designed an FPGA-based game system with a custom SoC, HDMI video pipeline, and responsive low-latency controls.</p>
+    </section>
+
+    <section class="project-layout">
+      <div class="project-main">
+        <h3>Overview</h3>
+        <p>
+          This project was a custom FPGA platformer game built as a hardware/software co-design system.
+          I designed the RTL for a custom SoC and integrated it with C-based software to support real-time gameplay,
+          video output, and user input. The project combined digital design, embedded software, and system-level integration.
+        </p>
+
+        <img src="../images/fpga-platformer-1.jpg" alt="FPGA platformer image">
+
+        <h3>Demo</h3>
+        <video controls>
+          <source src="../videos/fpga-platformer-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Problem / Goal</h3>
+        <p>
+          The goal was to build a complete interactive system on FPGA hardware rather than just isolated digital modules.
+          I wanted to create something that required coordination across video generation, memory-mapped communication,
+          input handling, and software control, while still meeting real-time performance goals.
+        </p>
+
+        <h3>Technical Implementation</h3>
+        <ul>
+          <li>Designed RTL for a custom FPGA-based SoC</li>
+          <li>Built an FSM-based HDMI video pipeline for display output</li>
+          <li>Implemented an SPI input controller for low-latency user interaction</li>
+          <li>Used AXI4-Lite for memory-mapped communication between components</li>
+          <li>Integrated hardware modules with C-based software control</li>
+          <li>Achieved real-time video processing at 30 FPS</li>
+        </ul>
+
+        <h3>Challenges</h3>
+        <p>
+          One of the hardest parts was coordinating timing across multiple hardware components while keeping the system responsive.
+          Video pipelines are very sensitive to timing, and input handling needed to feel immediate. I had to carefully structure
+          the hardware/software boundary so the game remained both stable and low-latency.
+        </p>
+
+        <h3>Results</h3>
+        <p>
+          The final system demonstrated real-time gameplay with 30 FPS output and input latency below 5 ms.
+          It showed that the hardware and software stack could work together smoothly in an interactive application.
+        </p>
+
+        <h3>What I Learned</h3>
+        <p>
+          This project strengthened my skills in RTL design, SoC architecture, hardware/software integration,
+          and designing digital systems under real-time constraints.
+        </p>
+      </div>
+
+      <aside class="project-side">
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>SystemVerilog</li>
+          <li>C</li>
+          <li>FPGA</li>
+          <li>HDMI</li>
+          <li>SPI</li>
+          <li>AXI4-Lite</li>
+        </ul>
+
+        <h3>Project Links</h3>
+        <ul>
+          <li><a href="#">GitHub Repository</a></li>
+          <li><a href="#">Demo Video</a></li>
+          <li><a href="#">Architecture Diagram</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Yash Thakker</p>
+  </footer>
+</body>
+</html>

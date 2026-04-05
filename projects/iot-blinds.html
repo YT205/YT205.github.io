@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Smart Home Blinds | Yash Thakker</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h1><a href="../index.html">Yash Thakker</a></h1>
+    <div class="nav-links">
+      <a href="../projects.html">Projects</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="project-header">
+      <h2>IoT Smart Home Blinds</h2>
+      <p>Built an ESP32-based smart blinds system with Wi-Fi control, Alexa integration, and sensor-driven automation.</p>
+    </section>
+
+    <section class="project-layout">
+      <div class="project-main">
+        <h3>Overview</h3>
+        <p>
+          This project was a smart home automation system that controlled blinds using an ESP32-based embedded platform.
+          I wanted to combine wireless control, custom hardware design, and real-world actuation into a single project.
+          The system supported both direct Wi-Fi control and voice control through Alexa, while also incorporating environmental sensing for adaptive behavior.
+        </p>
+
+        <img src="../images/iot-blinds-1.jpg" alt="IoT blinds project image">
+
+        <h3>Demo</h3>
+        <video controls>
+          <source src="../videos/iot-blinds-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Problem / Goal</h3>
+        <p>
+          The goal was to build a smart blinds system that felt practical and complete, not just a simple motor demo.
+          I wanted the blinds to respond to network-based commands, integrate with a real smart-home assistant,
+          and use sensor data to enable more intelligent automation.
+        </p>
+
+        <h3>Technical Implementation</h3>
+        <ul>
+          <li>Programmed an ESP32 to control blinds over Wi-Fi using TCP/IP</li>
+          <li>Integrated Alexa voice commands for hands-free control</li>
+          <li>Designed a custom PCB for the embedded control system</li>
+          <li>Used an A4988 stepper motor driver for precise blind actuation</li>
+          <li>Implemented sensor-based automation using environmental data</li>
+          <li>Wrote custom communication code for real-time data handling</li>
+        </ul>
+
+        <h3>Challenges</h3>
+        <p>
+          A key challenge was making the system reliable across both hardware and networking layers.
+          Motor control, wireless communication, and automation logic all had to work together smoothly.
+          I also had to design around the physical behavior of the blinds so the actuation felt controlled and repeatable.
+        </p>
+
+        <h3>Results</h3>
+        <p>
+          The final system supported Wi-Fi control, Alexa integration, precise motor-driven movement,
+          and adaptive behavior based on sensor input, making it a complete end-to-end IoT automation project.
+        </p>
+
+        <h3>What I Learned</h3>
+        <p>
+          This project taught me a lot about embedded systems design in the real world, especially how custom hardware,
+          firmware, networking, and physical actuation have to work together to create a polished product.
+        </p>
+      </div>
+
+      <aside class="project-side">
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>ESP32</li>
+          <li>C++</li>
+          <li>TCP/IP</li>
+          <li>Alexa Integration</li>
+          <li>Custom PCB</li>
+          <li>A4988 Driver</li>
+        </ul>
+
+        <h3>Project Links</h3>
+        <ul>
+          <li><a href="#">GitHub Repository</a></li>
+          <li><a href="#">Demo Video</a></li>
+          <li><a href="#">PCB Images</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Yash Thakker</p>
+  </footer>
+</body>
+</html>
