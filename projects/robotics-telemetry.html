@@ -25,14 +25,23 @@
 
     <section class="project-layout">
       <div class="project-main">
-        <h3>Overview</h3>
+
+        <h3>Problem to solve</h3>
         <p>
-          This project focused on building a telemetry system for robotics applications, with the goal of improving visibility
-          into system state during operation. The platform was designed to collect sensor and diagnostic data, transmit it reliably,
-          and present it in a form useful for debugging, monitoring, and performance analysis.
+          After a year's worth of working as a member of our school's combat robotics team, I watched our robot get beat up in the first round of competition. 
+          Upon further inspection, we had found the culprit to be a drained battery, a sad way to go out. The next year as the captain of the team, I wanted to take
+          this issue into my own hands. At the time we had no way of knowing whether the battery was drained until it was too late, so I decided to build a telemetry system
+           that would allow us to monitor the battery voltage in real time and alert us if it was getting too low.
         </p>
 
-        <img src="../images/robotics-telemetry-1.jpg" alt="Robotics telemetry image">
+        <h3>Overview</h3>
+        <p>
+          This project focused on building a telemetry system for our school's combat robotics team. The goal was to create a real-time data 
+          pipeline that could collect sensor readings from the robot, transmit them wirelessly to a base station, and provide a dashboard 
+          for monitoring key performance metrics during testing and competition.
+        </p>
+
+        <img src="../images/robotics-telemetry.jpeg" alt="Robotics telemetry image">
 
         <h3>Demo</h3>
         <video controls>
@@ -40,32 +49,26 @@
           Your browser does not support the video tag.
         </video>
 
-        <h3>Problem / Goal</h3>
-        <p>
-          Robotics systems can be difficult to debug in real time without a clear view into internal sensor values,
-          controller outputs, and system health. I built this project to create a telemetry pipeline that made robot behavior
-          easier to observe and analyze.
-        </p>
-
         <h3>Technical Implementation</h3>
         <ul>
-          <li>Add your sensors, controllers, or subsystems here</li>
-          <li>Add your communication protocol here</li>
-          <li>Add your dashboard, visualization, or logging setup here</li>
-          <li>Add any embedded hardware or microcontroller used here</li>
-          <li>Add latency, update rate, or reliability design choices here</li>
+          <li>Arduino Nano running main control logic</li>
+          <li>Bluetooth communication for wireless data transmission</li>
+          <li>Android dashboard for real-time visualization</li>
+          <li>2 analog inputs from 0V to 12V using 16-bit analog-to-digital converter</li>
+          <li>Custom PCB for integrating all components</li>
         </ul>
 
         <h3>Challenges</h3>
         <p>
-          One of the biggest challenges was balancing update speed, reliability, and readability of the telemetry stream.
-          I also had to make sure the monitoring system was useful without interfering with the robot’s core performance.
+          One of the biggest challenges and learning points was integrating the hardware and software components into a cohesive system. I had to design a custom PCB to connect the sensors, microcontroller, and Bluetooth module,
+          while also developing the software for data collection, transmission, and visualization. I also had to test that the BLE communication was reliable and that the dashboard provided accurate and timely information during robot operation.
         </p>
 
         <h3>Results</h3>
         <p>
-          The final system provided a clearer view of robot state during operation and made it easier to debug system behavior,
-          validate performance, and identify issues during testing.
+          The final system allowed us to monitor the robot's battery voltage in real time during testing and competition, which helped us avoid unexpected shutdowns 
+          due to drained batteries. The telemetry platform also provided insights into other performance metrics, allowing us to make informed adjustments to our robot's design and strategy.
+           When we used this device in the final district competition, we were able to better allocate our battery power and ended up winning the district championship, the first time in school history.
         </p>
 
         <h3>What I Learned</h3>
@@ -78,17 +81,21 @@
       <aside class="project-side">
         <h3>Tech Stack</h3>
         <ul>
-          <li>Add tool 1</li>
-          <li>Add tool 2</li>
-          <li>Add tool 3</li>
+          <li>Arduino</li>
+          <li>C++</li>
+          <li>I2C Communication</li>
+          <li>Bluetooth Communication</li>
+          <li>EagleCAD PCB Design</li>
+          <li>Soldering</li>
+          <li>Protoyping</li>
         </ul>
 
-        <h3>Project Links</h3>
+        <!-- <h3>Project Links</h3>
         <ul>
           <li><a href="#">GitHub Repository</a></li>
           <li><a href="#">Demo Video</a></li>
           <li><a href="#">System Diagram</a></li>
-        </ul>
+        </ul> -->
       </aside>
     </section>
   </main>

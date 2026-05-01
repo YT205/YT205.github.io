@@ -25,10 +25,17 @@
 
     <section class="project-layout">
       <div class="project-main">
+        <h3>Problem to solve</h3>
+        <p>
+          During summer break, I was having a hard time waking up. No school or responsibilities meant I would sleep in till noon many days.
+          I realized this wasn't sustainable and tried setting alarms to get myself up earlier. Only problem was, I would just snooze the alarms and never wake up. 
+          After doing a bit of research, I found that the sun was the best way to naturally regulate my circadian rhythm. This is why I decided to make this 
+          smart blinds systems that automatically opens in the morning to wake me up and closes at night to help me sleep better.
+        </p>
         <h3>Overview</h3>
         <p>
           This project was a smart home automation system that controlled blinds using an ESP32-based embedded platform.
-          I wanted to combine wireless control, custom hardware design, and real-world actuation into a single project.
+          I wanted to combine wireless control, custom hardware design, and smart automation into one project.
           The system supported both direct Wi-Fi control and voice control through Alexa, while also incorporating environmental sensing for adaptive behavior.
         </p>
 
@@ -51,29 +58,30 @@
         <ul>
           <li>Programmed an ESP32 to control blinds over Wi-Fi using TCP/IP</li>
           <li>Integrated Alexa voice commands for hands-free control</li>
-          <li>Designed a custom PCB for the embedded control system</li>
+          <li>Designed a custom PCB for the microcontroller system</li>
           <li>Used an A4988 stepper motor driver for precise blind actuation</li>
           <li>Implemented sensor-based automation using environmental data</li>
-          <li>Wrote custom communication code for real-time data handling</li>
+          <li>3D modelled and printed a spindle and case to house the components</li>
         </ul>
 
         <h3>Challenges</h3>
         <p>
-          A key challenge was making the system reliable across both hardware and networking layers.
-          Motor control, wireless communication, and automation logic all had to work together smoothly.
-          I also had to design around the physical behavior of the blinds so the actuation felt controlled and repeatable.
+          A key challenge was finding a motor that would be strong enough to turn the shades, and also accurate enough to control exact position.
+          I started with a DC motor which I quickly realised was too weak and impresise for the job. Servos also failed, providing the torque but not enough degrees of rotation. 
+          I then switched to a stepper motor which 
+          provided the torque and precision I needed, but required more complex control logic and a seperate driver to interface with the ESP32.
         </p>
 
         <h3>Results</h3>
         <p>
           The final system supported Wi-Fi control, Alexa integration, precise motor-driven movement,
-          and adaptive behavior based on sensor input, making it a complete end-to-end IoT automation project.
+          and adaptive behavior based on temperature and light input, making it a complete end-to-end IoT automation project.
         </p>
 
         <h3>What I Learned</h3>
         <p>
-          This project taught me a lot about embedded systems design in the real world, especially how custom hardware,
-          firmware, networking, and physical actuation have to work together to create a polished product.
+          This project taught me a lot about microcontroller development and how to interface sensors and motors effectively.
+           It also taught me a lot about the protyping process, going from breadboard to final PCB with an enclosed case.
         </p>
       </div>
 
@@ -85,15 +93,16 @@
           <li>TCP/IP</li>
           <li>Alexa Integration</li>
           <li>Custom PCB</li>
-          <li>A4988 Driver</li>
+          <li>A4988 Stepper Driver</li>
+          <li>CAD + 3D Printing</li>
         </ul>
 
-        <h3>Project Links</h3>
+        <!-- <h3>Project Links</h3>
         <ul>
           <li><a href="#">GitHub Repository</a></li>
           <li><a href="#">Demo Video</a></li>
           <li><a href="#">PCB Images</a></li>
-        </ul>
+        </ul> -->
       </aside>
     </section>
   </main>
