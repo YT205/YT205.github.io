@@ -72,8 +72,9 @@ a {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1f2937, #374151);
-  color: white;
+  background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 52%, #dbeafe 100%);
+  color: #111827;
+  min-height: 380px;
   padding: 80px 8%;
 }
 
@@ -85,7 +86,7 @@ a {
 .hero p {
   max-width: 760px;
   font-size: 1.1rem;
-  color: #e5e7eb;
+  color: #4b5563;
 }
 
 .hero-buttons {
@@ -103,12 +104,27 @@ a {
   border: 1px solid #cbd5e1;
   background: white;
   color: #111827;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .btn.primary {
   background: #2563eb;
   color: white;
   border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.12);
+  transform: translateY(-3px);
+}
+
+.btn.primary:hover,
+.btn.primary:focus {
+  background: #1d4ed8;
+  box-shadow: 0 10px 22px rgba(37, 99, 235, 0.24);
 }
 
 .container {
@@ -235,15 +251,31 @@ a {
 }
 
 .contact-section {
-  background: linear-gradient(135deg, #111827 0%, #1f2937 55%, #2563eb 100%);
-  color: white;
+  background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 52%, #dbeafe 100%);
+  display: flex;
+  align-items: center;
   min-height: 520px;
   padding: 70px 8%;
 }
 
+.contact-panel {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(280px, 1.1fr);
+  gap: 32px;
+  max-width: 980px;
+  overflow: hidden;
+  padding: 34px;
+  width: 100%;
+}
+
 .contact-intro {
-  max-width: 760px;
-  margin-bottom: 28px;
+  background: #111827;
+  border-radius: 12px;
+  color: white;
+  padding: 30px;
 }
 
 .contact-intro h2 {
@@ -256,27 +288,35 @@ a {
   font-size: 1.08rem;
 }
 
+.contact-eyebrow {
+  color: #93c5fd;
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .contact-card {
-  background: white;
-  border: 1px solid #dbeafe;
-  border-top: 4px solid #2563eb;
-  border-radius: 14px;
-  padding: 22px;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #2563eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .contact-card:hover,
 .contact-card:focus {
+  background: #eff6ff;
   border-color: #93c5fd;
-  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
-  transform: translateY(-3px);
+  transform: translateX(4px);
 }
 
 .contact-label {
@@ -310,5 +350,10 @@ a {
 
   .hero h2 {
     font-size: 2rem;
+  }
+
+  .contact-panel {
+    grid-template-columns: 1fr;
+    padding: 22px;
   }
 }
