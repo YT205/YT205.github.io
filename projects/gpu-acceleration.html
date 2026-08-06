@@ -7,23 +7,26 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <h1><a href="../index.html">Yash Thakker</a></h1>
-    <div class="nav-links">
-      <a href="../projects.html">Projects</a>
-      <a href="../experience.html">Experience</a>
-      <!-- <a href="../resume.html">Resume</a> -->
-      <a href="../contact.html">Contact</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="../index.html">Yash Thakker</a>
+      <nav class="site-nav">
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <!-- <a href="../resume.html">Resume</a> -->
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main>
-    <section class="project-header">
-      <h2>Parallel Programming for CNN Acceleration</h2>
+    <section class="page-header wrap">
+      <p class="eyebrow"><a href="../projects.html">← Back to Projects</a></p>
+      <h1>Parallel Programming for CNN Acceleration</h1>
       <p>Optimized CNN inference workloads on GPU using custom CUDA kernels, shared memory, and thread-level parallelism.</p>
     </section>
 
-    <section class="project-layout">
+    <section class="project-layout wrap">
       <div class="project-main">
         <h3>Overview</h3>
         <p>
@@ -63,7 +66,7 @@
         <p>
           The final implementation improved overall throughput by 40% on key HPC-style workloads and reduced convolution latency
           by 2.3x for LeNet-5 inference. These results showed the impact of shared memory optimization, better scheduling,
-          and careful profiling-driven tuning. :contentReference[oaicite:1]{index=1}
+          and careful profiling-driven tuning.
         </p>
 
         <h3>What I Learned</h3>
@@ -76,7 +79,7 @@
 
       <aside class="project-side">
         <h3>Tech Stack</h3>
-        <ul>
+        <ul class="side-tags">
           <li>C/C++</li>
           <li>CUDA</li>
           <li>NVIDIA Nsight</li>
@@ -86,7 +89,7 @@
         </ul>
 
         <!-- <h3>Project Links</h3>
-        <ul>
+        <ul class="side-links">
           <li><a href="#">GitHub Repository</a></li>
           <li><a href="#">Demo Video</a></li>
           <li><a href="#">Performance Report</a></li>
@@ -95,8 +98,10 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 Yash Thakker</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Yash Thakker</p>
+    </div>
   </footer>
 </body>
 </html>

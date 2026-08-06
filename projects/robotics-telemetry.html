@@ -7,37 +7,39 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <h1><a href="../index.html">Yash Thakker</a></h1>
-    <div class="nav-links">
-      <a href="../projects.html">Projects</a>
-      <a href="../experience.html">Experience</a>
-      <!-- <a href="../resume.html">Resume</a> -->
-      <a href="../contact.html">Contact</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="../index.html">Yash Thakker</a>
+      <nav class="site-nav">
+        <a href="../projects.html" aria-current="page">Projects</a>
+        <a href="../experience.html">Experience</a>
+        <!-- <a href="../resume.html">Resume</a> -->
+        <a href="../contact.html">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
   <main>
-    <section class="project-header">
-      <h2>Robotics Telemetry System</h2>
+    <section class="page-header wrap">
+      <p class="eyebrow"><a href="../projects.html">← Back to Projects</a></p>
+      <h1>Robotics Telemetry System</h1>
       <p>Built a real-time telemetry platform for collecting, transmitting, and visualizing robot sensor and performance data.</p>
     </section>
 
-    <section class="project-layout">
+    <section class="project-layout wrap">
       <div class="project-main">
-
         <h3>Problem to solve</h3>
         <p>
-          After a year's worth of working as a member of our school's combat robotics team, I watched our robot get beat up in the first round of competition. 
+          After a year's worth of working as a member of our school's combat robotics team, I watched our robot get beat up in the first round of competition.
           Upon further inspection, we had found the culprit to be a drained battery, a sad way to go out. The next year as the captain of the team, I wanted to take
           this issue into my own hands. At the time we had no way of knowing whether the battery was drained until it was too late, so I decided to build a telemetry system
-           that would allow us to monitor the battery voltage in real time and alert us if it was getting too low.
+          that would allow us to monitor the battery voltage in real time and alert us if it was getting too low.
         </p>
 
         <h3>Overview</h3>
         <p>
-          This project focused on building a telemetry system for our school's combat robotics team. The goal was to create a real-time data 
-          pipeline that could collect sensor readings from the robot, transmit them wirelessly to a base station, and provide a dashboard 
+          This project focused on building a telemetry system for our school's combat robotics team. The goal was to create a real-time data
+          pipeline that could collect sensor readings from the robot, transmit them wirelessly to a base station, and provide a dashboard
           for monitoring key performance metrics during testing and competition.
         </p>
 
@@ -66,9 +68,9 @@
 
         <h3>Results</h3>
         <p>
-          The final system allowed us to monitor the robot's battery voltage in real time during testing and competition, which helped us avoid unexpected shutdowns 
+          The final system allowed us to monitor the robot's battery voltage in real time during testing and competition, which helped us avoid unexpected shutdowns
           due to drained batteries. The telemetry platform also provided insights into other performance metrics, allowing us to make informed adjustments to our robot's design and strategy.
-           When we used this device in the final district competition, we were able to better allocate our battery power and ended up winning the district championship, the first time in school history.
+          When we used this device in the final district competition, we were able to better allocate our battery power and ended up winning the district championship, the first time in school history.
         </p>
 
         <h3>What I Learned</h3>
@@ -80,7 +82,7 @@
 
       <aside class="project-side">
         <h3>Tech Stack</h3>
-        <ul>
+        <ul class="side-tags">
           <li>Arduino</li>
           <li>C++</li>
           <li>I2C Communication</li>
@@ -91,7 +93,7 @@
         </ul>
 
         <!-- <h3>Project Links</h3>
-        <ul>
+        <ul class="side-links">
           <li><a href="#">GitHub Repository</a></li>
           <li><a href="#">Demo Video</a></li>
           <li><a href="#">System Diagram</a></li>
@@ -100,8 +102,10 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 Yash Thakker</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Yash Thakker</p>
+    </div>
   </footer>
 </body>
 </html>

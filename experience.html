@@ -7,60 +7,83 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <h1><a href="index.html">Yash Thakker</a></h1>
-    <div class="nav-links">
-      <a href="projects.html">Projects</a>
-      <a href="experience.html">Experience</a>
-      <!-- <a href="resume.html">Resume</a> -->
-      <a href="contact.html">Contact</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">Yash Thakker</a>
+      <nav class="site-nav">
+        <a href="projects.html">Projects</a>
+        <a href="experience.html" aria-current="page">Experience</a>
+        <!-- <a href="resume.html">Resume</a> -->
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
+
   <main>
-  <section class="container">
-    <h2 class="section-title">Experience</h2>
+    <section class="section section-flush">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>Internships and industry work in embedded software and systems engineering.</p>
+        </div>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Incoming Embedded Software Engineering Intern at Tesla</h3>
-        <p class="meta">Fall 2026 • Palo Alto, CA</p>
-        <ul>
-          <li>Incoming role on Tesla's Vehicle Software team focused on embedded software for keys and authentication systems.</li>
-          <li>Expected to work on secure vehicle access workflows involving firmware, authentication logic, and embedded system integration.</li>
-          <li>Planning to contribute to development, debugging, and validation of software running close to vehicle hardware.</li>
-        </ul>
-      </div>
+        <div class="timeline">
+          <article>
+            <p class="timeline-date">Fall 2026 · Palo Alto, CA</p>
+            <div class="timeline-body">
+              <h3>Incoming Embedded Software Engineering Intern at Tesla</h3>
+              <ul>
+                <li>Incoming role on Tesla's Vehicle Software team focused on embedded software for keys and authentication systems.</li>
+                <li>Expected to work on secure vehicle access workflows involving firmware, authentication logic, and embedded system integration.</li>
+                <li>Planning to contribute to development, debugging, and validation of software running close to vehicle hardware.</li>
+              </ul>
+            </div>
+            <div class="timeline-logo">
+              <img src="images/tesla.png" alt="Tesla logo">
+            </div>
+          </article>
 
-      <div class="timeline-item">
-        <!-- <img src="images/amazon-leo.jpeg" alt="Amazon Leo logo" class="company-logo"> -->
-        <h3>Embedded Software Engineering Intern at Amazon Leo</h3>
-        <p class="meta">May 2026 – August 2026 • Redmond, WA</p>
-        <ul>
-          <li>Developed embedded Linux infrastructure for a multi-SoC firmware platform, supporting kernel configuration, device-tree setup, boot validation, and virtualized hardware workflows.</li>
-          <li>Extended internal QEMU machine models with custom MMIO/GPIO peripheral emulation and virtio-mmio support, enabling hardware-free firmware testing and configuration validation.</li>
-          <li>Enhanced Linux root filesystem image generation with layered overlays, enabling variant-specific system configuration while reducing base-image modification overhead.</li>
-        </ul>
-      </div>
+          <article>
+            <p class="timeline-date">May 2026 – August 2026 · Redmond, WA</p>
+            <div class="timeline-body">
+              <h3>Embedded Software Engineering Intern at Amazon Leo</h3>
+              <ul>
+                <li>Developed embedded Linux infrastructure for a multi-SoC firmware platform, supporting kernel configuration, device-tree setup, boot validation, and virtualized hardware workflows.</li>
+                <li>Extended internal QEMU machine models with custom MMIO/GPIO peripheral emulation and virtio-mmio support, enabling hardware-free firmware testing and configuration validation.</li>
+                <li>Enhanced Linux root filesystem image generation with layered overlays, enabling variant-specific system configuration while reducing base-image modification overhead.</li>
+              </ul>
+            </div>
+            <div class="timeline-logo">
+              <img src="images/amazon-leo.jpeg" alt="Amazon Leo logo">
+            </div>
+          </article>
 
-      <div class="timeline-item">
-        <!-- <img src="images/caterpillar.png" alt="Caterpillar logo" class="company-logo"> -->
-        <h3>Software Engineering Intern at Caterpillar</h3>
-        <p class="meta">May 2025 – August 2025 • Peoria, IL</p>
-        <ul>
-          <li>Built a novel embedded signal monitoring framework in MATLAB/Simulink and C to process real-time vibration and
-torque data from mining drill sensors, improving on-board estimation of drill bit wear by 2-3x</li>
-          <li>Integrated machine learning inference with embedded signal pipelines, achieving over 80% accuracy in wear-state detection
-and forecasting wear trends with under 10% error for predictive maintenance.</li>
-          <li>Validated firmware for RTOS on ECU using HIL test platforms, optimizing runtime reliability, sensor throughput via
-CAN protocol, and latency under real-time constraints within an Agile systems engineering workflow.</li>
-        </ul>
+          <article>
+            <p class="timeline-date">May 2025 – August 2025 · Peoria, IL</p>
+            <div class="timeline-body">
+              <h3>Software Engineering Intern at Caterpillar</h3>
+              <ul>
+                <li>Built a novel embedded signal monitoring framework in MATLAB/Simulink and C to process real-time vibration and
+                  torque data from mining drill sensors, improving on-board estimation of drill bit wear by 2-3x</li>
+                <li>Integrated machine learning inference with embedded signal pipelines, achieving over 80% accuracy in wear-state detection
+                  and forecasting wear trends with under 10% error for predictive maintenance.</li>
+                <li>Validated firmware for RTOS on ECU using HIL test platforms, optimizing runtime reliability, sensor throughput via
+                  CAN protocol, and latency under real-time constraints within an Agile systems engineering workflow.</li>
+              </ul>
+            </div>
+            <div class="timeline-logo">
+              <img src="images/caterpillar.png" alt="Caterpillar logo">
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
   </main>
 
-  <footer class="footer">
-    <p>© 2026 Yash Thakker</p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Yash Thakker</p>
+    </div>
   </footer>
 </body>
 </html>
