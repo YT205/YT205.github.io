@@ -72,8 +72,8 @@ a {
 }
 
 .hero {
-  background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 52%, #dbeafe 100%);
-  color: #111827;
+  background: linear-gradient(135deg, #1f2937 0%, #334155 55%, #2563eb 100%);
+  color: white;
   min-height: 380px;
   padding: 80px 8%;
 }
@@ -86,7 +86,7 @@ a {
 .hero p {
   max-width: 760px;
   font-size: 1.1rem;
-  color: #4b5563;
+  color: #e5e7eb;
 }
 
 .hero-buttons {
@@ -239,6 +239,17 @@ a {
 .project-main ul,
 .project-side ul {
   margin-left: 20px;
+}
+
+.project-side a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.project-side a:hover,
+.project-side a:focus {
+  color: #1d4ed8;
 }
 
 .resume-box,
